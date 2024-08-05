@@ -1,0 +1,39 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    background-color:rgba(0, 0, 205, 0.729);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    row-gap: 50px;
+}
+
+.about{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+   font-size: 35px;
+  text-align: center;
+  row-gap: 30px;
+}
+
+.about p{
+    border: solid 5px black;
+    padding:10px;
+    background-color: lightgray;
+    border-radius: 50px;
+}
+
+.about img{
+    border-radius: 30px;
+}
+
+
+
