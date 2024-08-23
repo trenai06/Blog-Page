@@ -17,12 +17,19 @@ a:visited{
     color: black;
 }
 
+.grid-container{
+    display: grid;
+    grid-template-areas: none;
+}
+
 nav{
+    grid-area: nav;
     display:flex;
     justify-content: space-around;
     align-items: center;
     background-color: white;
     border: solid 2px black;  
+
 }
 
 .links{
@@ -90,6 +97,7 @@ nav{
 }
 
 .blog{
+    grid-area: blog;
     border:solid black 2px;
     display: flex;
     flex-direction: column;
@@ -111,10 +119,38 @@ figcaption{
     margin-bottom: 20px;
 }
 
-@media all {
-    img{
-        height: 50%;
-        width: 50%;
+@media  only screen and (max-width:600px){
+    nav{
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .links img{
+    height:10px;
+    width: 20px;
+    }
+
+    .logo{
+        height: 40px;
+        width: 40px;
+    }
+    .social{
+        height: 20px;
+        width: 20px;
+    }
+
+    .pagetitle{
+        font-size: 100px;
+        text-align: center;
+    }
+
+    .pageheading{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .blog{
+        margin: 10px;
     }
 }
 
